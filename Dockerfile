@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["src/DotNetRender.Web.csproj", "."]
+COPY ["src/DotNetRender.Web/DotNetRender.Web.csproj", "."]
 RUN dotnet restore "./DotNetRender.Web.csproj"
 COPY . .
 WORKDIR "/src/."
