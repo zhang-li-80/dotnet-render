@@ -38,8 +38,6 @@ namespace WebApplication1
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseForwardedHeaders();
-
             app.UseStaticFiles();
 
             app.UseRouting();
